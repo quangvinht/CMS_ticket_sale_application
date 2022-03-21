@@ -1,0 +1,11 @@
+.App {
+  
+    display: flex;
+    background-color: #E5E5E5;
+    height: 100%;
+    width: 100%;
+  
+}
+body{
+    border-radius: 16px;
+}

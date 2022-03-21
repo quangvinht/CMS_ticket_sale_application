@@ -1,0 +1,528 @@
+.Setting{
+    display: flex;
+    flex-direction: column;
+    flex:4;
+    background-color:transparent;
+    padding:10px;
+    height:100%;
+}
+.Setting .TicketManager__tableData{
+    font-size: 15px;
+}
+
+.used--processing{
+    border:1px solid #03AC00;
+    background-color:#DEF7E0;
+}
+
+.used--processing .used-point{
+    border-radius: 50%;
+    border: 4px solid #03AC00;
+    background-color: #03AC00;
+}
+
+
+.used--processing .used-text{
+    color: #03AC00;
+}
+
+.used--closing{
+    width: 45%;
+}
+.Setting__export{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+   
+
+    /* Yellow/1 */
+
+    color: #FF993C;
+
+
+    /* Inside auto layout */
+
+    margin: 0px 10px;
+
+    background:transparent;
+    border:1px solid #FF993C;
+    border-radius: 8px;
+    padding:5px 10px;
+}
+
+.Setting_addTicket{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+   
+
+    /* Yellow/1 */
+
+    color: #FF993C;
+
+
+    /* Inside auto layout */
+
+    margin: 0px 10px;
+
+   background: #FF993C;
+    color:white;
+    border:1px solid #FF993C;
+    border-radius: 8px;
+    padding:5px 10px;
+
+}
+
+.Setting__Edit{
+    display:flex;
+    align-items:center;
+}
+.Setting__Edit__img{
+    width:20px;
+    height:20px;
+}
+
+.Setting__Edit div:nth-child(2){
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+
+    display: flex;
+    align-items: center;
+
+    /* Yellow/1 */
+
+    color: #FF993C;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 4px;
+}
+
+.Setting_modal__title{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-self: center;
+
+    /* Text */
+
+    color: #1E0D03;
+    }
+
+.Setting__modal__list{
+    display: flex;
+    justify-content:space-between;
+    width:90%;
+}
+
+.Setting__modal____item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Setting__modal____item span{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    display: flex;
+    align-items: center;
+
+    /* end */
+
+    color: #FD5959;
+}
+
+.Setting__modal____item div:nth-child(1){
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+
+    opacity: 0.7;
+
+}
+
+.Setting__modal____item input{
+    padding:4px 50px 4px 10px ;
+    border-radius: 8px;
+    outline: none;
+    border:1px solid #dee0e3;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    width:97%;
+    /* Text */
+
+    color: #1E0D03;
+
+    opacity: 0.7;
+
+}
+.input--setting{
+    width: 50% !important;
+}
+
+.Setting__modal__dates__item{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.Setting__modal__dates__item__header{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+
+    opacity: 0.7;
+}
+.Setting__modal__timeDAte-item{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width:90%;
+}
+    
+
+
+input[type="time"]::-webkit-calendar-picker-indicator{
+    filter: invert(80%) sepia(19%) saturate(6792%) hue-rotate(330deg) brightness(102%) contrast(104%);
+    
+}
+.Setting__modal_date-and-time{
+    display: flex;
+}
+
+.Setting__modal_date-and-time input[type="time"]{
+    
+    border-radius: 8px;
+    outline: none;
+    border:1px solid #dee0e3;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    
+    /* Text */
+    padding-left: 5px;
+    padding-right: 7px;
+    color: #1E0D03;
+    width: 58%;
+    opacity: 0.7;
+}
+.Setting__modal_date-and-time .react-datepicker-wrapper {
+    width: 78%;
+}
+
+.Setting__modal__prices{
+    display: flex;
+    flex-direction: column;
+}
+
+.Setting__modal__prices__header{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+
+    opacity: 0.7;
+}
+.Setting__modal__prices__item .form-check-input{
+    margin-top:3px;
+}
+.Setting__modal__prices__item{
+    display: flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    margin:5px 0;
+    
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+
+    opacity: 0.7;
+
+  
+
+    
+    flex-grow: 0;
+   
+}
+
+.Setting__modal__disable{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* Grey/4 */
+
+    color: #A5A8B1;
+
+    opacity: 0.7;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    padding:10px 90px 10px 10px;
+    background-color: #f1f4f8;
+    border-radius:10px;
+}
+
+.Setting__modal__disable2{
+    padding:10px 40px 10px 10px;
+
+}
+
+.Setting__modal__dropdown{
+    display: flex;
+    flex-direction: column;
+}
+
+.Setting__modal__dropdown__header{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+
+    opacity: 0.7;
+}
+
+
+.Dropdown-root {
+    width: 30% !important;
+    border-radius: 10px !important;
+}
+.Dropdown-control {
+    border-radius: 13px !important;
+}
+.Dropdown-arrow{
+    border-color: #FF993C transparent #FF993C  transparent !important;
+    top:17px !important;
+}
+
+.Dropdown-menu {
+    margin-top:10px !important;
+    border-radius:8px !important;
+}
+.Dropdown-menu:hover {
+    background-color: #f3c79e !important;
+    
+}
+
+.Dropdown-option .is-selected{
+    
+    
+}
+
+.Dropdown-option:hover{
+    background-color: #f3c79e !important;
+    
+} 
+.Setting__modal__dropdown__footer span{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    display: flex;
+    align-items: center;
+
+    /* end */
+
+    color: #FD5959;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 4px;
+}
+.Setting__modal__dropdown__footer{
+    font-family: 'Montserrat';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+
+    opacity: 0.4;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 3px 4px;
+}
+
+.TicketManager__modal__item {
+    height:400px;
+}
+.Setting__modal__button{
+    display: flex;
+    align-self: center;
+}
+
+
+.Setting__modal__button__cancle{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    display: flex;
+    align-items: center;
+
+    /* Yellow/1 */
+
+    color: #FF993C;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    background-color:transparent;
+    border-radius:10px;
+    border:1px solid #FF993C;
+    padding:5px 50px;
+    
+
+    cursor: pointer;
+
+}
+
+.Setting__modal__button__save{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    display: flex;
+    align-items: center;
+
+    /* Yellow/1 */
+
+    color: white;
+    cursor: pointer;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    background-color:#FF993C;
+    border-radius:10px;
+    border:1px solid #FF993C;
+    padding:5px 50px;
+    cursor: pointer;
+
+}
+   
+   

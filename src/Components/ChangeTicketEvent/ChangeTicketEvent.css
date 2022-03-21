@@ -1,0 +1,11 @@
+.ChangeTicketEvent{
+    display: flex;
+    flex-direction: column;
+    flex:4;
+    background-color:transparent;
+    padding:10px;
+    height:100%;
+}
+.ChangeTicketEvent .ChangeTicket__container__table{
+    font-size: 11px;
+}

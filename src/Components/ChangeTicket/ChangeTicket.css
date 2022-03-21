@@ -1,0 +1,315 @@
+.ChangeTicket{
+    display: flex;
+    flex-direction: column;
+    flex:4;
+    background-color:transparent;
+    padding:10px;
+    height:100%;
+}
+
+.ChangeTicket__container__table__header{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 54px;
+    /* identical to box height, or 150% */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+}
+
+.ChangeTicket__container{
+    
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:30px;
+    
+}
+
+.ChangeTicket__container__table{
+    width:70%;
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    padding:15px;
+    border-radius: 24px;
+}
+
+.ChangeTicket__container__filter{
+    width:25%;
+    background-color:white;
+    padding:4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    border-radius: 24px;
+    padding-right: 15px;
+    padding-bottom: 140px;
+
+}
+.ChangeTicket__container__table__searchButton{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:15px;
+}
+
+ .ChangeTicket__container__table__searchButton .TicketManager__filter__logoSaerch{
+     right:-66px;
+ }
+
+ .ChangeTicket__container__table__searchButton__button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 12px;
+    /* identical to box height, or 144% */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #FFFFFF;
+    
+    
+    /* Inside auto layout */
+    
+  
+    padding: 12px 20px;
+
+   
+
+    /* Yellow/1 */
+    border: unset;
+    background: #FF993C;
+    border-radius: 8px;
+ }
+
+ .ChangeTicket__container__realTable  th{
+    padding: 8px 20px;
+}
+
+.ChangeTicket__container__realTable td{
+    padding: 8px 20px;
+}
+
+
+
+.ChangeTicket__container__filter__header{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+    margin-left: 14px;
+}
+
+.ChangeTicket__container__filter__item{
+    display: flex;
+    justify-content:space-between;
+    margin-left:14px;
+}
+.ChangeTicket__container__filter__item__header{
+    /* 16 semibold */
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+    align-self: flex-start;
+    opacity: 0.8;
+    margin-top: 12px;
+}
+
+.ChangeTicket__container__filter__item .TicketManager__filter--filter--checkboxs--list{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.ChangeTicket__container__filter__item__ticket{
+    display: flex;
+    justify-content:space-between;
+    margin-left: 14px;
+}
+
+.ChangeTicket__container__filter__item__ticket div:nth-child(1){
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 26px;
+/* identical to box height, or 162% */
+
+display: flex;
+align-items: center;
+
+/* Text */
+
+color: #1E0D03;
+
+opacity: 0.8;
+}
+
+
+.ChangeTicket__container__filter__item__ticket div:nth-child(2){
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+
+    opacity: 0.7;
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin-right: 22%;
+}
+
+
+
+.ChangeTicket__container__filter__item__disable-calendar{
+    display: flex;
+    margin-left: 14px;
+    justify-content: space-between;
+}
+
+.ChangeTicket__container__filter__item__disable-calendar span{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+
+    opacity: 0.8;
+}
+
+.ChangeTicket__container__filter__item__disable-calendar .react-datepicker-wrapper{
+    width:unset;
+    background-color:#E0E0E0;
+    border-radius:8px;
+
+    
+}
+
+
+.ChangeTicket__container__filter__item__disable-calendar .react-datepicker-wrapper::before {
+    
+    background-image: url('../../style/img/disableCalendar.svg') !important;
+  
+}
+
+.ChangeTicket__container__filter__item__disable-calendar--active .react-datepicker-wrapper::before {
+    
+    background-image: url('../../style/img/calendar.svg') !important;
+  
+}
+
+.ChangeTicket__container__filter__button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+
+
+    /* Yellow/1 */
+
+    color: #FF993C;
+
+
+   
+    margin: 0px 10px;
+    padding:5px 10px;
+    border: 1px solid #FF993C;
+    background:transparent;
+    border-radius: 10px;
+    width:30%;
+    text-align: center;
+    
+    align-self: center;
+    margin-bottom: 20px;
+}
+.ChangeTicket__container__table__searchButton__button__export{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    display: flex;
+    align-items: center;
+
+    /* Yellow/1 */
+
+    color: #FF993C;
+    border:1px solid #FF993C;
+    border-radius: 10px;
+    padding:5px 10px;
+
+    background-color: transparent;
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+}
+
+
+.ChangeTicket > .TicketManager--pagination{
+    width: 70%;
+}
+
+
+.ChangeTicket__container__filter__item__disable-calendar--active > .react-datepicker__day--selected, .react-datepicker__day--in-selecting-range, .react-datepicker__day--in-range, .react-datepicker__month-text--selected, .react-datepicker__month-text--in-selecting-range, .react-datepicker__month-text--in-range, .react-datepicker__quarter-text--selected, .react-datepicker__quarter-text--in-selecting-range, .react-datepicker__quarter-text--in-range, .react-datepicker__year-text--selected, .react-datepicker__year-text--in-selecting-range, .react-datepicker__year-text--in-range {
+
+    background-color: #f8c390 !important;
+    border-radius: 50% !important;
+    
+}

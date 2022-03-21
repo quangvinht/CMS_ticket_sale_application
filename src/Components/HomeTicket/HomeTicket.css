@@ -1,0 +1,227 @@
+.HomeTicket{
+    display: flex;
+    flex-direction: column;
+    flex:4;
+    background-color:transparent;
+    padding:10px;
+    height:100%;
+}
+
+
+.HomeTicket__container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding:15px;
+    margin-top:15px;
+    border-radius: 24px;
+
+}
+
+.HomeTicket__container--title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 54px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+}
+
+.HomeTicket__name-calendar{
+    display: flex;
+    justify-content:space-between;
+}
+
+.HomeTicket__name-calendar--name{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+
+    /* Text */
+
+    color: #1E0D03;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+
+.HomeTicket__ChartArea{
+    margin:10px 0;
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+transform: translateX(-25px);
+
+/* Grey */
+
+color: #888888;
+opacity: 0.7;
+}
+.HomeTicket__des{
+    display: flex;
+    flex-direction:column;
+}
+.HomeTicket__des div:nth-child(1){
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+
+
+/* Text */
+
+color: #1E0D03;
+
+opacity: 0.5;
+}
+
+.HomeTicket__des div:nth-child(2){
+/* 24 bold */
+
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+/* identical to box height, or 125% */
+
+
+/* Text */
+
+color: #1E0D03;
+}
+
+
+.HomeTicket__des span{
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 22px;
+/* identical to box height, or 157% */
+
+
+/* Text */
+
+color: #1E0D03;
+    }
+
+    .react-datepicker__input-container input{
+    border: 1px solid #E6E0E0 !important;
+    outline: none !important;
+    cursor: pointer !important;
+    
+}
+.react-datepicker__input-container input:focus{
+    outline: none !important;
+}
+
+.HomeTicket__ChartPie{
+    margin-top:30px;
+    display: flex;
+
+}
+
+.HomeTicket__ChartPie--item{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.HomeTicket__ChartPie--item-chart{
+    margin-top: -110px;
+}
+
+.HomeTicket__ChartPie--item-header{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+
+
+    /* Text */
+    margin-bottom:25px;
+
+    color: #1E0D03;
+
+
+    /* Inside auto layout */
+    text-align: center;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    
+}
+
+.HomeTicket__Chartdescrip{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-bottom:110px;
+}
+
+.HomeTicket__Chartdescrip--item{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.HomeTicket__Chartdescrip--item div:nth-child(1){
+    width: 50px;
+    height: 22px;
+    background: #4F75FF;
+    border-radius: 4px;
+
+
+}
+
+.HomeTicket__Chartdescrip--item div:nth-child(2){
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    /* identical to box height, or 157% */
+
+
+    /* Text */
+
+    color: #1E0D03;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+
+
+}
+
+.HomeTicket__Chartdescrip--item-orange div:nth-child(1){
+        
+    background: #FF8A48;
+}
+

@@ -1,0 +1,58 @@
+.Header{
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+    
+    align-items:center;
+    background-color:transparent;
+    
+    
+}
+.Header__input input[type="text"]{
+    background-color: #EDEDED;
+    border-radius: 12px;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 160px 10px 16px;
+    outline:none;
+    border:none;
+    text-transform: italic;
+    
+}
+.Header__input{
+    position: relative;
+    width: 30%;
+}
+
+.Header__input__logo{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 25px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.Header__infor{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 10%;
+}
+
+.Header__infor__mail{
+    width: 18px;
+    height: 18px;
+}
+.Header__infor__bell{
+    width: 18px;
+    height: 18px;
+}
+
+.Header__infor__avatar{
+    width: 30px;
+    height: 30px;
+}
+

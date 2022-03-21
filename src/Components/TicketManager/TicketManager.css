@@ -1,0 +1,870 @@
+.TicketManager{
+    display: flex;
+    flex-direction: column;
+    flex:4;
+    background-color:transparent;
+    padding:10px;
+    height:100%;
+}
+
+.TicketManager__title{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 54px;
+    /* or 150% */
+
+    display: flex;
+    align-items: center;
+
+    color: #000000;
+
+}
+
+.TicketManager__container{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding:15px;
+    margin-top:15px;
+    border-radius: 24px;
+}
+
+.TicketManager__filter{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+
+
+.TicketManager__filter__search input[type="text"]{
+
+    background-color: #EDEDED;
+    border-radius: 12px;
+   
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 144px 10px 16px;
+    outline:none;
+    border:none;
+    text-transform: italic;
+    
+}
+
+.TicketManager__filter__search{
+    position: relative;
+    width:30%;
+}
+.TicketManager__filter__logoSaerch{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    right: 28px;
+    top:50%;
+    transform: translateY(-50%);
+}
+.TicketManager__filter__Item{
+    display: flex;
+    align-items: center;
+    border: 1px solid #FF993C;
+    padding:2px 5px;
+    border-radius:5px;
+}
+
+.TicketManager__filter__Item:nth-child(1){
+    position: relative;
+}
+
+.TicketManager__filter__Item__img{
+    width:14px;
+    height:14px;
+    transform: translateY(-3px);
+}
+.TicketManager__filter__Item span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    display: flex;
+    align-items: center;
+
+    /* Yellow/1 */
+
+    color: #FF993C;
+
+
+   
+    margin: 0px 5px;
+}
+.TicketManager__filter__List{
+    display: flex;
+    z-index: 2;
+    
+}
+.TicketManager__filter__Item:nth-child(1){
+    margin-right:6px;
+    cursor: pointer;
+    position: relative;
+}
+
+.TicketManager__filter--filter{
+    
+    flex-direction: column;
+    padding: 15px;
+    background-color: white;
+    width: 582%;
+    border-radius: 16px;
+    position:absolute;
+    top:175%;
+    left:-260px;
+    display:none;
+}
+.TicketManager__filter__Item:nth-child(1)::after{
+    content: '';
+    width:100px;
+    height:100px;
+    
+    position:absolute;
+    top:100%;
+    
+}
+.TicketManager__filter__Item:nth-child(1):hover .TicketManager__filter--filter{
+    display:flex;
+    flex-direction: column;
+}
+
+
+.TicketManager__filter--filter--header{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+
+    
+    
+
+    /* Text */
+
+    color: #1E0D03;
+    align-self: center !important ;
+    text-align: center;
+
+}
+
+.TicketManager__filter--filter--date{
+    display: flex;
+}
+
+.TicketManager__filter--filter--date--item{
+    display: flex;
+    flex-direction: column;
+}
+.TicketManager__filter--filter--date--item--fromDay {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+
+    opacity: 0.7;
+    margin-bottom: 3px;
+}
+
+.react-datepicker__header {
+
+    background-color:white !important; 
+    border-bottom: none !important;
+    color: #23221F !important;
+    font-family: Montserrat !important;
+    font-style: normal !important;
+    font-weight: bold !important;
+    font-size: 18px !important;
+    line-height: 26px !important;
+}
+.react-datepicker__current-month{
+    margin-left:-90px !important;
+}
+.react-datepicker__navigation--next{
+    right: 93px !important;
+}
+
+.react-datepicker__day-name{
+    color: #C55E00 !important;
+    font-family: Montserrat !important;
+    font-style: normal !important;
+    font-weight: 600 !important;
+    font-size: 18px !important;
+    line-height: 28px !important;
+   
+}
+
+.react-datepicker__year-read-view--down-arrow, .react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view--down-arrow, .react-datepicker__navigation-icon::before {
+    border-color: unset !important;
+    color: black !important;
+    width: 6px !important;
+    height: 6px !important;
+    
+}
+
+.react-datepicker__navigation-icon {
+    top:4px !important;
+}
+.react-datepicker__input-container input{
+    padding: 4px !important;
+    border-radius: 8px !important;
+    width: 104px !important;
+}
+
+.react-datepicker-wrapper{
+    position: relative !important; ;
+}
+
+
+.react-datepicker-wrapper::before{
+        content: '' !important;
+        position: absolute !important;
+        background-image: url('../../style/img/calendar.svg') !important;
+        width: 15px !important;
+        height: 15px !important;
+        top:5px !important;
+        left:92px !important;
+        z-index: 5 !important;
+        
+        background-size: cover !important;
+        background-position: center !important;
+	    
+
+}
+
+.react-datepicker__day--selected{
+    border-radius: 50% !important;
+    background-color: #FFBA7B !important;
+}
+
+.react-datepicker__day--keyboard-selected, .react-datepicker__month-text--keyboard-selected, .react-datepicker__quarter-text--keyboard-selected, .react-datepicker__year-text--keyboard-selected {
+    border-radius: 50% !important;
+    background-color: #FFBA7B !important;
+    color: #fff !important;
+}
+.react-datepicker__current-month{
+    margin-bottom: 30px !important;
+}
+
+
+.react-datepicker__current-month::before{
+    content: '' !important;
+        position: absolute !important;
+        background-image: url('../../style/img/followDay.svg') !important;
+        width: 79px !important;
+        height: 18px !important;
+        top:40px !important;
+        left:18px !important;
+        z-index: 5 !important;
+        
+        background-size: cover !important;
+        background-position: center !important;
+}
+
+.react-datepicker__current-month::after{
+    content: '' !important;
+        position: absolute !important;
+        background-image: url('../../style/img/followWeek.svg') !important;
+        width: 79px !important;
+        height: 18px !important;
+        top:40px !important;
+        left:145px !important;
+        z-index: 5 !important;
+        
+        background-size: cover !important;
+        background-position: center !important;
+}
+
+.react-datepicker{
+    border-radius: 12px !important;
+    box-shadow: 4px 4px 45px rgba(109, 46, 0, 0.35) !important;
+    overflow: hidden !important;
+    
+}
+
+.TicketManager__filter--filter--date--item:nth-child(2){
+    margin-left:50px;
+}
+.TicketManager__filter--filter--checkboxs{
+    display:flex;
+    justify-content:space-between;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.TicketManager__filter--filter--checkboxs .MapChheckbox {
+    display:flex;
+    align-items:center;
+}
+.TicketManager__filter--filter--checkboxs span {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+
+    opacity: 0.8;
+}
+.TicketManager__filter--filter--checkboxs--list{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    
+}
+
+input[type='radio'] {
+    -webkit-appearance:none;
+    width:16px;
+    height:16px;
+    
+    border-radius:50%;
+    outline:none;
+    border: 1px solid #27AEF9;
+    
+  }
+  
+
+  
+  input[type='radio']:before {
+    content:'';
+    display:block;
+    width:60%;
+    height:60%;
+    margin: 20% auto;    
+    border-radius:50%;    
+  }
+  input[type='radio']:checked:before {
+    background:#27AEF9;
+  }
+
+  .react-datepicker__day:hover, .react-datepicker__month-text:hover, .react-datepicker__quarter-text:hover, .react-datepicker__year-text:hover {
+    border-radius: 50% !important;
+    background-color: #f1c69d !important;
+}
+
+
+
+.TicketManager__filter--filter--check-in{
+    display:flex;
+    justify-content:space-between;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.TicketManager__filter--filter--check-in--header{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+
+    display: flex;
+    align-items: center;
+
+    /* Text */
+
+    color: #1E0D03;
+
+    opacity: 0.8;
+    margin:0 5px;
+}
+
+
+.TicketManager__filter--filter--check-in--item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    width: 64%;
+    align-items:center;
+}
+.form-check:nth-child(5){
+    margin-left:-8px;
+    
+}
+
+
+
+.form-check-input:checked[type=checkbox] {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/White_check.svg/1200px-White_check.svg.png');
+    
+   
+
+}
+
+.form-check-input:checked {
+    background-color: #27AEF9;
+    border-color: #27AEF9;
+}
+
+.form-check-input[type=checkbox] {
+    border-radius: .25em;
+}
+
+
+.form-check-input {
+    width: 1em;
+    height: 1em;
+    margin-top: 5px;
+    vertical-align: top;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover ;
+    background-position: center ;
+    border: 1px solid rgba(0,0,0,.25);
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact;
+}
+
+
+.TicketManager__filter__button{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    display: flex;
+    align-items: center;
+
+    /* Yellow/1 */
+
+    color: #FF993C;
+
+
+    /* Inside auto layout */
+    margin-top:30px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+   align-self: center;
+   justify-self: center;
+    padding:5px 50px;
+    border-radius: 8px;
+    background-color: white;
+    border: 1px solid #FF993C;
+    cursor: pointer;
+
+}
+
+
+.TicketManager__tableData{
+    margin-top:20px;
+}
+th{
+    background-color:#F1F4F8;
+    text-align: left;
+}
+
+table, th, td {
+    border: none;
+    border-collapse: collapse;
+  }
+th, td {
+    padding: 8px 10px;
+  }
+
+  tr:nth-child(odd) {
+    background-color: #F1F4F8;
+  }
+
+.used{
+    background-color:  #EAF1F8;
+    display: flex;
+    background: #EAF1F8;
+    /* Grey/5 */
+    width: 60%;
+    border: 1px solid #919DBA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-right: 60px;
+    align-items: center;
+
+}
+.used-text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* Grey/5 */
+
+    color: #919DBA;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+.used-point{
+    
+    border-radius:50%;
+    border: 4px solid #919DBA;
+    background-color:  #919DBA;
+}
+.used-everused{
+    
+    display: flex;
+    background: #DEF7E0;
+    /* Grey/5 */
+    width: 70%;
+    border: 1px solid #919DBA;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin-right: 60px;
+    align-items: center;
+
+}
+
+
+.everused-point{
+    border-radius:50%;
+    border: 4px solid #03AC00;
+    background-color:  #03AC00;
+}
+.everused-text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* Grey/5 */
+
+    color: #03AC00;
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+.overdate-point{
+    border-radius:50%;
+    border: 4px solid #FD5959;
+    background-color:  #FD5959;
+}
+
+.overdate-text{
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+
+    /* Grey/5 */
+
+    color: #FD5959;
+    
+
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 8px;
+}
+
+
+.used-overdate{
+    border: 1px solid #FD5959;
+    background-color: #f8ebe8;
+    width:50%;
+}
+
+.TicketManager--pagination{
+    width: 100%;
+    display:flex;
+    justify-content: center;
+}
+.paginationBttns{
+    display: flex;
+   
+    list-style: none;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    /* Text */
+    align-items: center;
+    color: #1E0D03;
+
+    opacity: 0.7;
+    cursor: pointer;
+    
+}
+
+.paginationActive{
+    color: #FF993C;
+    padding:5px 8px;
+    border:1px solid #FF993C;
+    border-radius: 6px;
+    margin:0 9px;
+}
+
+.previousBttn{
+    margin:0 18px;
+}
+
+.ChosePage__prevArrow{
+    width:10px;
+    height:12px;
+    
+}
+
+.ChosePage__nextArrow{
+    width:10px;
+    height:12px;
+    margin-left:9px;
+}
+
+.paginationBttns li{
+    margin:0 5px;
+}
+
+
+.linePoint{
+
+    font-style: normal;
+font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    /* or 157% */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    /* Text */
+
+    color: #1E0D03;
+    position: relative;
+    opacity: 0.7;
+}
+
+.imagethirdPoint{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+   
+}
+
+.TicketManager__modal{
+    position:fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom:0;
+    background-color: rgba(8, 7, 7, 0.6);
+    z-index: 10;
+    
+}
+
+.TicketManager__modal__item{
+    position:absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #FFFFFF;
+    border-radius: 10px;
+    opacity: 1;
+    z-index: 1;
+    padding:45px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    width: 600px;
+    height: 300px;
+    animation: ToptoMid linear  2s;
+    position: relative;
+}
+
+@keyframes ToptoMid{
+    from{
+        left:-90%;
+    }to{
+        left:0;
+    }
+}
+
+
+
+
+.TicketManager__modal__item__header{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    /* identical to box height, or 125% */
+
+    
+    
+    align-self: center;
+
+    /* Text */
+
+    color: #1E0D03;
+    
+
+}
+
+.TicketManager__modal__item__des{
+    display: flex;
+    width: 100%;
+    
+    
+    
+}
+
+.TicketManager__modal__des__header{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    /* identical to box height, or 162% */
+    width:30%;
+    display: flex;
+    align-items: center;
+
+    /* Text */
+    
+    color: #1E0D03;
+
+    opacity: 0.7;
+}
+
+
+.TicketManager__modal__item__des__infor{
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+    
+   
+    /* Text */
+    
+    color: #1E0D03;
+    width: 70%;
+    opacity: 0.7;
+    
+}
+
+.TicketManager__modal__item__des__calendar{
+    width:30%;
+}
+
+.TicketManager__modal__item__des__calendar .react-datepicker-popper{
+    top: 50% !important;
+    left:25% !important;
+}
+
+.TicketManager__modal__item__des--button{
+    align-self: center;
+    justify-self: center;
+    width:unset;
+}
+
+.TicketManager__modal__item__des_button{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    /* identical to box height, or 144% */
+
+    display: flex;
+    align-items: center;
+
+    /* Yellow/1 */
+
+    
+
+    /* Inside auto layout */
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
+    outline:none;
+    border-radius: 8px;
+    padding: 5px 40px;
+    border:1px solid #FF993C;
+}
+
+.TicketManager__modal__item__des_button--cancel{
+    background: white;
+    color: #FF993C;
+}
+
+.TicketManager__modal__item__des_button--save{
+    color : white;
+    background: #FF993C;
+}
+
+
+
